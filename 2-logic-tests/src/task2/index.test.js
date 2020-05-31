@@ -248,7 +248,7 @@ describe('Task2', () => {
         targetAccount: 'B',
         amount: 10,
         category: 'eating_out',
-        time: '2018-03-02T10:32:10.000Z'
+        time: '2018-03-02T10:32:00.000Z'
       }
     ];
     

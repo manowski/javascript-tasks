@@ -17,8 +17,8 @@ export const findDuplicateTransactions = (transactions = []) => {
 
     similarTrans[key].forEach((txn, item) => {
       if (previousTransaction) {
-        const endTime = new Date(previousTransaction.time)
-        const startTime = new Date(txn.time)
+        const endTime = new Date(previousTransaction.time).getTime()
+        const startTime = new Date(txn.time).getTime()
 
         if (startTime - endTime <= minute) {
           duplicates = duplicates.length === 0 ? [previousTransaction, txn] : [...duplicates, txn]
@@ -46,7 +46,7 @@ export const findDuplicateTransactions = (transactions = []) => {
 
 
 const calculateTime = (time1, time2) => {
-  const m1 = new Date(time1.time)
-  const m2 = new Date(time2.time)
+  const m1 = new Date(time1.time).getTime()
+  const m2 = new Date(time2.time).getTime()
   return m1 >= m2 ? 1 : -1
 }
