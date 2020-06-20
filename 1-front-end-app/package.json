@@ -1,12 +1,12 @@
 {
-  "name": "swing-dev-mastaz-front-end-task",
+  "name": "front-end",
   "version": "1.0.0",
-  "description": "A repository of logic tasks for people who want to attend the SwingDev MaStaż internship program",
+  "description": "A repository of logic tasks",
   "main": "main.js",
   "scripts": {
     "start": "webpack-dev-server -d --progress --colors --inline --open"
   },
-  "author": "Aleksander Stós <aleksander.stos@swing.dev>",
+  "author": "Emilian Manowski",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.9.6",
